@@ -20,7 +20,7 @@ npm i
 # Run the following command to find your IPv4 address:
 ipconfig
 # Copy the IPv4 address of your Wireless LAN (e.g., 192.168.xx.xx) if you are on WiFi.
-![Picture](images/first.png)
+![Picture](/images/first.png)
 
 
 
