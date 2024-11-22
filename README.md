@@ -28,12 +28,12 @@ ipconfig
 # Open the project folder in your code editor:
 # 1. Edit docker-compose.yaml:
 #    - Replace <PRIVATE_IP> with your IPv4 address in two places.
-![Screenshot 2024-11-23 012525](https://github.com/user-attachments/assets/133e80f1-11be-4a23-ae75-614e75cecada)
+![Screenshot 2024-11-23 012525](https://github.com/user-attachments/assets/58eb699b-98bd-4c54-8e52-3ae5861d7475)
 
 
 # 2. Edit client.js:
 #    - Update the brokers array with your IPv4 address.
-![Screenshot 2024-11-23 012558](https://github.com/user-attachments/assets/7655c02a-d562-4249-8cba-bec2015f41a7)
+![Screenshot 2024-11-23 012558](https://github.com/user-attachments/assets/0a8de49d-3888-4bcc-8d05-ad11b9c6da4d)
 
 # Step 5: Start Docker Containers
 # Open Docker Desktop and run the following command to spin up the containers:
@@ -44,27 +44,27 @@ docker compose -f docker-compose.yaml up
 # Run the following command to start the server:
 node server.js
 # Create a poll, e.g., "Who is going to win?" with options like ind, pak, nz, aus.
-![Screenshot 2024-11-23 015107](https://github.com/user-attachments/assets/64ab2e57-ed1a-4d1b-b8e5-1f5955ae8be0)
+![Screenshot 2024-11-23 015107](https://github.com/user-attachments/assets/9d435980-df7c-4ca1-a465-3f856c23ba46)
 
 # Stop the application using Ctrl+C.
 
 # Step 7: View Poll in MongoDB
 # Open MongoDB, navigate to the polls database, and locate the poll collection.
 # Copy the _id of the created poll.
-![Screenshot 2024-11-23 015132](https://github.com/user-attachments/assets/d18ccb0f-89fa-44a0-a5cb-5f7a81007da2)
+![Screenshot 2024-11-23 015132](https://github.com/user-attachments/assets/0d5669b0-60b4-44e4-a846-964c494b6acf)
 
 # Step 8: Create the Topic and Partition
 # Open a new terminal tab and run:
 node admin.js <poll_id>
 # (Replace <poll_id> with the _id you copied earlier.)
-![Screenshot 2024-11-23 024557](https://github.com/user-attachments/assets/df987130-ed3c-46d9-ae0e-d5e881b0a635)
+![Screenshot 2024-11-23 024401](https://github.com/user-attachments/assets/fa61bd40-0f71-4670-84eb-05733a6d7ac6)
 
 # Step 9: Start the Application Components
 # Open new terminal tabs and run the following commands:
 node server.js
 node consumer.js <poll_id>
 # (Replace <poll_id> with the _id of the poll you copied earlier.)
-![Screenshot 2024-11-23 024458](https://github.com/user-attachments/assets/1fb1bcfd-3b85-4fd5-ab77-fd20250db998)
+![Screenshot 2024-11-23 024458](https://github.com/user-attachments/assets/4ed58f20-35e2-417c-bc1e-fdc37cf2dbb8)
 
 # Step 10: Access the Application
 # Open the application in your browser:
@@ -73,7 +73,7 @@ http://localhost:3000
 Notes:
 - When casting a vote, you can see:
 - Now whenever you poll some team you can see which partition is assigned to it , which option have you selected and of which poll in that terminal where you run node consumer.js <PRIVATE_ID>  
-![Screenshot 2024-11-23 024401](https://github.com/user-attachments/assets/f4d3c780-24da-4bcd-bdf7-39e35908d671)
+![Screenshot 2024-11-23 024557](https://github.com/user-attachments/assets/8e0b7ddb-7de5-4d4f-b90a-1eda01055318)
 
  
 - The leaderboard is currently compatible with a single poll only
