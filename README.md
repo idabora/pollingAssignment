@@ -2,7 +2,6 @@
 
 Follow the steps below to set up and run the project:
 
-```bash
 # Step 1: Clone the Repository
 git clone <repository-url>
 
